@@ -1,0 +1,30 @@
+<!-- index.html -->  
+<html ng-app='angularSeed'>  
+<head>  
+  <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
+</head>  
+<body ng-controller='homeController'>  
+  <header>
+    <h1>Angular Routing</h1>
+      <nav> 
+        <ul> 
+          <li><a href="#/">Inicio</a></li>
+          <li><a href="#/view1">view 1</a></li>
+          <li><a href="#/view2">view 2</a></li>         </ul> 
+      </nav>
+    </header>
+    <div id="main">
+      <!-- Aquí inyectamos las vistas -->
+      <div ng-view></div> 
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular-route.js"></script>
+    <script src="app.js"></script>
+    <script src="services/service2.js"></script>
+    <script src="controllers/homeController.js"></script>
+    <script src="controllers/controller1.js"></script>
+    <script src="controllers/controller2.js"></script>
+
+    
+  </body>
+  </html>
